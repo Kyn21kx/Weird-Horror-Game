@@ -1,0 +1,16 @@
+Nombre: The Stalker (de momento)
+Genero: Horror/Terror Psicologico?
+Gameplay: Survival Horror
+Basada en: Louise Paxton (historia real)
+Descripcion: Contaremos la historia de los videos mas importantes del canal de dicha persona, representando los acontecimientos  
+que en estos pasen, sin ningun aviso de cambio de dia o algo por el estilo, solo con un fade-out cuando se acabe y un fade-in 
+cuando vaya a iniciar. Tomaremos el papel de la protagonista simulando como fue si dia a dia, con alguna cinematica de ser necesaria
+realizando diferentes tareas con forme pase el tiempo dependiendo de los acontecimientos del dia anterior.
+Al termino de un dia, se presentara una animacion de que la protagonista deja la camara con la que esta documentando los acontecimientos
+de ese dia y se acuesta, haciendo el fade-out para el dia siguiente.
+Idea general:En cada escenario se realizaran tareas diferentes al dia anterior, dependiendo de los acontecimientos que hayan pasado 
+en el dia anterior
+Especificaciones:
+-Todos los dias revisar las habitaciones para ver algun cambio en estas mismas.
+-Si existe algun cambio o anomalia, se mostrara un task de lo que se debe realizar en ese caso. 
+-ULTIMA NOCHE: TASK INFINITO DE CHECAR LA CAJA DE FUSIBLES DE LA CASA
