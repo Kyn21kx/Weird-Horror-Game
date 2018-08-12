@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -21,27 +21,28 @@ public class FlashLight : MonoBehaviour {
         
         if (Power <= 80 && Power >= 70) {
             Decrease(false);
+            
         }
-        if (Power <= 55 && Power >= 40) {
+        else if (Power <= 55 && Power >= 40) {
             Decrease(true);
         }
     }
-    private void Decrease (bool flicker) {
-        
+    private void Decrease (bool flickering) {       
         lightSource.intensity -= intensityAmnt * Time.fixedDeltaTime;
-        if (flicker) {
-            for (int i = 0; i <= 6; i++) {
-                if (i % 2 == 0) {
-                    System.Threading.Timer timer = new System.Threading.Timer(Blinking, 10, 1, 1000);
-                }
-                else {
-                    
-                }
-            }
-        }
+        if (flickering)
+        StartCoroutine(Blinking(true));
     }
-    private void Blinking (object state) {
-
+    private IEnumerator Blinking (bool tmr) {
+        int cnt = 0;
+        while (tmr) {
+            yield return new WaitForSeconds(0.2f);
+            lightSource.enabled = false;
+            yield return new WaitForSeconds(0.2f);
+            lightSource.enabled = true;
+            cnt++;
+            if (cnt >= 5)
+                break;
+        }
     }
 
 
