@@ -1,0 +1,6 @@
+Si se da la ocasión de tener que tomar un item del suelo, un letrero aparecerá primero en la parte de arriba y centro de la UI;
+Cuando se dirija la mirada específicamente al objeto, un raycast proveído por la cámara hará trigger con el objeto y activará una
+animación de texto con la leyenda "Pick up object", o algo de la índole.
+
+*Utilizar Text Mesh Pro para todos los textos, y animarlos con el componente built in  de Unity.
+*Raycast desde la cámara tiene que hacer contacto directo con el objeto y su tag.
